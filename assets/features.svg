@@ -1,0 +1,84 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient for Backgrounds -->
+    <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5865F2" />
+      <stop offset="100%" style="stop-color:#7289DA" />
+    </linearGradient>
+
+    <!-- Subtle Grid Pattern for Background -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2C2F33" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Main Background -->
+  <rect width="100%" height="100%" fill="#23272A" />
+  <rect width="100%" height="100%" fill="url(#grid)" opacity="0.3" />
+
+  <!-- CARD 1: Declarative Builder -->
+  <g transform="translate(50, 50)">
+    <rect width="340" height="300" rx="16" fill="#2C2F33" stroke="#3C4043" stroke-width="1.5" />
+    
+    <!-- Icon: Clean Layout -->
+    <g transform="translate(100, 40)">
+      <rect width="140" height="140" rx="20" fill="#23272A" stroke="#5865F2" stroke-width="2"/>
+      <!-- Layout Elements -->
+      <rect x="25" y="25" width="90" height="16" rx="4" fill="#5865F2"/>
+      <rect x="25" y="50" width="60" height="12" rx="4" fill="#72767D"/>
+      <rect x="25" y="70" width="80" height="12" rx="4" fill="#72767D"/>
+      <rect x="25" y="95" width="40" height="20" rx="4" fill="#5865F2" opacity="0.6"/>
+      <rect x="75" y="95" width="40" height="20" rx="4" fill="#5865F2" opacity="0.6"/>
+    </g>
+
+    <!-- Text -->
+    <text x="170" y="220" font-family="Segoe UI, sans-serif" font-weight="700" font-size="26" fill="#FFFFFF" text-anchor="middle">Declarative Builder</text>
+    <text x="170" y="255" font-family="Segoe UI, sans-serif" font-weight="400" font-size="16" fill="#B9BBBE" text-anchor="middle">Intuitive, chainable API for</text>
+    <text x="170" y="275" font-family="Segoe UI, sans-serif" font-weight="400" font-size="16" fill="#B9BBBE" text-anchor="middle">Container Components.</text>
+  </g>
+
+  <!-- CARD 2: Smart Pagination (REDESIGNED) -->
+  <g transform="translate(430, 50)">
+    <rect width="340" height="300" rx="16" fill="#2C2F33" stroke="#3C4043" stroke-width="1.5" />
+    
+    <!-- Icon: Clean Navigation Controls -->
+    <g transform="translate(100, 40)">
+      <rect width="140" height="140" rx="20" fill="#23272A" stroke="#5865F2" stroke-width="2"/>
+      
+      <!-- Left Button -->
+      <rect x="15" y="50" width="35" height="40" rx="6" fill="#3C4043"/>
+      <path d="M32 70 L 25 60 L 25 80 Z" fill="#FFFFFF"/>
+
+      <!-- Center Page (Focus) -->
+      <rect x="55" y="40" width="30" height="60" rx="6" fill="#5865F2"/>
+      <text x="70" y="77" font-family="Segoe UI, sans-serif" font-weight="700" font-size="24" fill="#FFFFFF" text-anchor="middle">1</text>
+      
+      <!-- Right Button -->
+      <rect x="90" y="50" width="35" height="40" rx="6" fill="#5865F2"/>
+      <path d="M108 70 L 115 60 L 115 80 Z" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Text -->
+    <text x="170" y="220" font-family="Segoe UI, sans-serif" font-weight="700" font-size="26" fill="#FFFFFF" text-anchor="middle">Smart Pagination</text>
+    <text x="170" y="255" font-family="Segoe UI, sans-serif" font-weight="400" font-size="16" fill="#B9BBBE" text-anchor="middle">Handles state, collectors,</text>
+    <text x="170" y="275" font-family="Segoe UI, sans-serif" font-weight="400" font-size="16" fill="#B9BBBE" text-anchor="middle">and idle timeouts for you.</text>
+  </g>
+
+  <!-- CARD 3: Type Safety -->
+  <g transform="translate(810, 50)">
+    <rect width="340" height="300" rx="16" fill="#2C2F33" stroke="#3C4043" stroke-width="1.5" />
+    
+    <!-- Icon: TS Brackets + Shield -->
+    <g transform="translate(100, 40)">
+      <rect width="140" height="140" rx="20" fill="#23272A" stroke="#5865F2" stroke-width="2"/>
+      <text x="70" y="85" font-family="Consolas, monospace" font-weight="700" font-size="50" fill="#5865F2" text-anchor="middle">{ }</text>
+      <circle cx="105" cy="95" r="18" fill="#57F287"/>
+      <path d="M95 95 L 102 102 L 116 88" stroke="#FFFFFF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Text -->
+    <text x="170" y="220" font-family="Segoe UI, sans-serif" font-weight="700" font-size="26" fill="#FFFFFF" text-anchor="middle">Fully Type-Safe</text>
+    <text x="170" y="255" font-family="Segoe UI, sans-serif" font-weight="400" font-size="16" fill="#B9BBBE" text-anchor="middle">Built with strict TypeScript</text>
+    <text x="170" y="275" font-family="Segoe UI, sans-serif" font-weight="400" font-size="16" fill="#B9BBBE" text-anchor="middle">for maximum reliability.</text>
+  </g>
+</svg>
