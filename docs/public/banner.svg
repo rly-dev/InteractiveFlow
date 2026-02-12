@@ -1,0 +1,101 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="flowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5865F2" />
+      <stop offset="100%" style="stop-color:#7289DA" />
+    </linearGradient>
+
+    <!-- Sheen Gradient for Buttons (Animated) -->
+    <linearGradient id="sheenGradient" x1="0%" y1="0" x2="100%" y2="0">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0">
+        <animate attributeName="offset" values="-1; 2" dur="3s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" style="stop-color:#FFFFFF;stop-opacity:0.3">
+        <animate attributeName="offset" values="-0.5; 2.5" dur="3s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0">
+        <animate attributeName="offset" values="0; 3" dur="3s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+    
+    <!-- Data Loading Shimmer -->
+    <linearGradient id="shimmer" x1="0%" y1="0" x2="100%" y2="0">
+      <stop offset="0%" style="stop-color:#72767D;stop-opacity:0.4">
+        <animate attributeName="offset" values="-2; 2" dur="2s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" style="stop-color:#FFFFFF;stop-opacity:0.8">
+        <animate attributeName="offset" values="-1.5; 2.5" dur="2s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" style="stop-color:#72767D;stop-opacity:0.4">
+        <animate attributeName="offset" values="-1; 3" dur="2s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Drop Shadow -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#23272A" rx="12" />
+
+  <!-- Logo Icon Group -->
+  <g transform="translate(100, 110)">
+    <!-- The "Container" Base -->
+    <rect x="20" y="20" width="130" height="130" rx="12" fill="#2C2F33" stroke="#3C4043" stroke-width="3"/>
+    
+    <!-- Container Content (Animated Shimmer) -->
+    <rect x="40" y="45" width="70" height="10" rx="5" fill="url(#shimmer)" />
+    <rect x="40" y="65" width="50" height="10" rx="5" fill="#72767D" opacity="0.4"/>
+    
+    <!-- The Button inside container -->
+    <rect x="40" y="95" width="90" height="32" rx="8" fill="#5865F2" />
+    <text x="85" y="116" font-family="Segoe UI, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">Click</text>
+
+    <!-- The "Flow" Arrow (Animated Pulse) -->
+    <g filter="url(#shadow)">
+      <path d="M0 150 Q 0 0, 150 0 L 150 -15 L 185 20 L 150 55 L 150 35 Q 35 35, 35 150 Z" fill="url(#flowGradient)">
+        <animate attributeName="opacity" values="0.7;1.0;0.7" dur="2s" repeatCount="indefinite" />
+      </path>
+    </g>
+  </g>
+
+  <!-- Text Group -->
+  <g transform="translate(320, 0)">
+    <text x="0" y="175" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-weight="800" font-size="96" fill="#FFFFFF">
+      Interactive<tspan fill="#5865F2">Flow</tspan>
+    </text>
+    <text x="0" y="235" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-weight="500" font-size="32" fill="#B9BBBE">
+      Dynamic Containers &amp; Pagination for Discord.js
+    </text>
+  </g>
+  
+  <!-- IMPROVED ANIMATED BUTTONS -->
+  <g transform="translate(320, 280)">
+    
+    <!-- Button 1: Documentation (Primary) -->
+    <g cursor="pointer">
+      <rect width="160" height="44" rx="8" fill="#5865F2" />
+      <!-- The Animated Sheen Overlay -->
+      <rect width="160" height="44" rx="8" fill="url(#sheenGradient)" />
+      <text x="80" y="28" font-family="Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">Documentation</text>
+    </g>
+
+    <!-- Button 2: NPM (Secondary) -->
+    <g transform="translate(175, 0)">
+      <rect width="100" height="44" rx="8" fill="#2C2F33" stroke="#3C4043" stroke-width="1.5" />
+      <rect width="100" height="44" rx="8" fill="url(#sheenGradient)" />
+      <text x="50" y="28" font-family="Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">NPM</text>
+    </g>
+
+    <!-- Button 3: GitHub (Secondary) -->
+    <g transform="translate(290, 0)">
+      <rect width="100" height="44" rx="8" fill="#2C2F33" stroke="#3C4043" stroke-width="1.5" />
+      <rect width="100" height="44" rx="8" fill="url(#sheenGradient)" />
+      <text x="50" y="28" font-family="Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">GitHub</text>
+    </g>
+
+  </g>
+</svg>

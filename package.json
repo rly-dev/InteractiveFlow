@@ -23,7 +23,9 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs"
   },
   "keywords": [
     "discord",
@@ -47,6 +49,7 @@
     "@types/node": "^22.0.0",
     "discord.js": "^14.18.0",
     "tsup": "^8.4.0",
-    "typescript": "^5.7.0"
+    "typescript": "^5.7.0",
+    "vitepress": "^1.6.4"
   }
 }
